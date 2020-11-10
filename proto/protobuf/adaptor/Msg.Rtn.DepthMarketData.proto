@@ -1,0 +1,13 @@
+syntax = "proto3";
+package msg.rtn;
+
+import "Rtn.DepthMarketData.proto";
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "RtnDepthMarketDataMsgProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message RtnDepthMarketDataMsg {
+	.rtn.DepthMarketDataField Depth = 1;
+}

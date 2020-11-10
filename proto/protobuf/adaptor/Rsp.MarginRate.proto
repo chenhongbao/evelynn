@@ -1,0 +1,19 @@
+syntax = "proto3";
+package rsp;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "MarginRateFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message MarginRateField {
+	string instrument_id = 1;
+	string broker_id = 2;
+	string investor_id = 3;
+	int32 hedge_flag = 4;
+	double long_margin_ratio_by_money = 5;
+	double long_margin_ratio_by_volume = 6;
+	double short_margin_ratio_by_money = 7;
+	double short_margin_ratio_by_volume = 8;
+	string exchange_id = 9;
+}

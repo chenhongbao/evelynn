@@ -1,0 +1,47 @@
+syntax = "proto3";
+package rtn;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "OrderFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message OrderField {
+	string broker_id	= 1;
+	string investor_id = 2;
+	string instrument_id = 3;
+	string order_ref = 4;
+	string user_id = 5;
+	int32 direction = 6;
+	int32 comb_offset_flag = 7;
+	int32 comb_hedge_flag = 8;
+	double limit_price = 9;
+	int32 volume_total_original = 10;
+	int32 time_condition = 11;
+	int32 volume_condition = 12;
+	int32 min_volume = 13;
+	int32 contigent_condition = 14;
+	double stop_price = 15;
+	int32 is_auto_suspend = 16;
+	int32 request_id = 17;
+	string order_local_id = 18;
+	string exchange_id =19;
+	int32 order_submit_status = 20;
+	string trading_day = 21;
+	string order_sys_id = 22;
+	int32 order_status = 23;
+	int32 volume_traded = 24;
+	int32 volume_total = 25;
+	string insert_date = 26;
+	string insert_time = 27;
+	string active_time = 28;
+	string suspend_time = 29;
+	string update_time = 30;
+	string cancel_time = 31;
+	int32 front_id = 32;
+	int32 session_id = 33;
+	string status_msg = 34;
+	int32 zce_total_traded_volume = 35;
+	string account_id = 36;
+	string currency_id = 37;
+}

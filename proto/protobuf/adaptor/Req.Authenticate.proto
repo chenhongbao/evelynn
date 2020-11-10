@@ -1,0 +1,15 @@
+syntax = "proto3";
+package req;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "ReqAuthenticateFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message AuthenticateField {
+	string broker_id	= 1;
+	string user_id = 2;
+	string app_id = 3;
+	string auth_code = 4;
+	string user_product_info = 5;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+package req;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "ReqUserLoginFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message UserLoginField {
+	string broker_id	= 1;
+	string user_id = 2;
+	string password = 3;
+}

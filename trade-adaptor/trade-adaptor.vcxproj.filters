@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="proto-adaptor">
+      <UniqueIdentifier>{a2b09f71-a17d-4dae-bddd-f93281f50a14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Trader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TraderSpi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReqQue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QryQue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TrafficControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Handlers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RspQue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Reconnecter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Qry.CommissionRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Qry.Instrument.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Qry.MarginRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Req.Authenticate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Req.OrderAction.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Req.OrderInsert.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Req.SettlementConfirm.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Req.UserLogin.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Req.UserLogout.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Authenticate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.CommissionRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Error.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Instrument.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.MarginRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.OrderAction.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.OrderInsert.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.SettlementConfirm.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.UserLogin.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.UserLogout.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rtn.DepthMarketData.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rtn.Order.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Msg.Rtn.Trade.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Qry.CommissionRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Qry.Instrument.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Qry.MarginRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Req.Authenticate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Req.InputOrder.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Req.InputOrderAction.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Req.SettlementConfirm.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Req.UserLogin.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Req.UserLogout.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rsp.Authenticate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rsp.CommissionRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rsp.Error.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rsp.Instrument.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rsp.MarginRate.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rsp.UserLogin.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rtn.DepthMarketData.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rtn.Order.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proto\adaptor\Rtn.Trade.pb.cc">
+      <Filter>proto-adaptor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RspQue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReqQue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QryQue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TraderSpi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Trader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Handlers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TrafficControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Reconnecter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Qry.CommissionRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Qry.Instrument.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Qry.MarginRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Req.Authenticate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Req.OrderAction.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Req.OrderInsert.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Req.SettlementConfirm.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Req.UserLogin.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Req.UserLogout.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Authenticate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.CommissionRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Error.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Instrument.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.MarginRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.OrderAction.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.OrderInsert.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.SettlementConfirm.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.UserLogin.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.UserLogout.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rtn.DepthMarketData.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rtn.Order.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Msg.Rtn.Trade.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Qry.CommissionRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Qry.Instrument.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Qry.MarginRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Req.Authenticate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Req.InputOrder.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Req.InputOrderAction.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Req.SettlementConfirm.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Req.UserLogin.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Req.UserLogout.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rsp.Authenticate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rsp.CommissionRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rsp.Error.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rsp.Instrument.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rsp.MarginRate.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rsp.UserLogin.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rtn.DepthMarketData.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rtn.Order.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proto\adaptor\Rtn.Trade.pb.h">
+      <Filter>proto-adaptor</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

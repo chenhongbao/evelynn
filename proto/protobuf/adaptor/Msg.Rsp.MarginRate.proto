@@ -1,0 +1,17 @@
+syntax = "proto3";
+package msg.rsp;
+
+import "Rsp.MarginRate.proto";
+import "Rsp.Error.proto";
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "RspMarginRateMsgProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message RspMarginRateMsg {
+	.rsp.MarginRateField margin_rate = 1;
+	.rsp.ErrorField error = 2;
+	int32 request_id = 3;
+	bool is_last = 4;
+}

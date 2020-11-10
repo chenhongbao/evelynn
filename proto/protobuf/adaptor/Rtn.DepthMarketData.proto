@@ -1,0 +1,35 @@
+syntax = "proto3";
+package rtn;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "DepthMarketDataFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message DepthMarketDataField {
+	string trading_day = 1;
+	string instrument_id = 2;
+	string exchange_id = 3;
+	double last_price = 4;
+	double pre_settlement_price = 5;
+	double pre_close_price = 6;
+	int32 pre_open_interest = 7;
+	double open_price = 8;
+	double highest_price = 9;
+	double lowest_price = 10;
+	int32 volume = 11;
+	double turn_over = 12;
+	int32 open_interest = 13;
+	double close_price = 14;
+	double settlement_price = 15;
+	double upper_limit_price = 16;
+	double lower_limit_price = 17;
+	string update_time = 18;
+	int32 update_millisec = 19;
+	double average_price = 20;
+	string action_day = 21;
+	double bid_price = 22;
+	int32 bid_volume = 23;
+	double ask_price = 24;
+	int32 ask_volume = 25;
+}

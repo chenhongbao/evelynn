@@ -1,0 +1,20 @@
+syntax = "proto3";
+package req;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "InputOrderActionFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message InputOrderActionField {
+	string broker_id	= 1;
+	string investor_id = 2;
+	string user_id = 3;
+	string instrument_id = 4;
+	string exchange_id = 5;
+	string order_sys_id = 6;
+	string order_ref = 7;
+	int32 front_id = 8;
+	int32 session_id = 9;
+	int32 action_flag = 10;
+}

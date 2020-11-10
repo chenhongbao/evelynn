@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f1a477fc-5cc1-47f7-a661-73830687921d}</ProjectGuid>
+    <RootNamespace>tradeadaptor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\libraries\ctp-6.3.19\include;..\libraries\cnats-2.3.0\include;..\libraries\protobuf-3.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libraries\protobuf-3.13.0\lib;..\libraries\ctp-6.3.19\lib;..\libraries\cnats-2.3.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\libraries\ctp-6.3.19\include;..\libraries\cnats-2.3.0\include;..\libraries\protobuf-3.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libraries\protobuf-3.13.0\lib;..\libraries\ctp-6.3.19\lib;..\libraries\cnats-2.3.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\proto\adaptor\Msg.Qry.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Qry.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Qry.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Req.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Req.OrderAction.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Req.OrderInsert.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Req.SettlementConfirm.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Req.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Req.UserLogout.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Error.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.OrderAction.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.OrderInsert.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.SettlementConfirm.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rsp.UserLogout.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rtn.DepthMarketData.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rtn.Order.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Msg.Rtn.Trade.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Qry.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Qry.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Qry.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Req.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Req.InputOrder.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Req.InputOrderAction.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Req.SettlementConfirm.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Req.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Req.UserLogout.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rsp.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rsp.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rsp.Error.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rsp.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rsp.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rsp.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rtn.DepthMarketData.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rtn.Order.pb.cc" />
+    <ClCompile Include="..\proto\adaptor\Rtn.Trade.pb.cc" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Handlers.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="QryQue.cpp" />
+    <ClCompile Include="Reconnecter.cpp" />
+    <ClCompile Include="ReqQue.cpp" />
+    <ClCompile Include="RspQue.cpp" />
+    <ClCompile Include="Trader.cpp" />
+    <ClCompile Include="TraderSpi.cpp" />
+    <ClCompile Include="TrafficControl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\proto\adaptor\Msg.Qry.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Qry.Instrument.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Qry.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Req.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Req.OrderAction.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Req.OrderInsert.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Req.SettlementConfirm.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Req.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Req.UserLogout.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Error.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Instrument.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.OrderAction.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.OrderInsert.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.SettlementConfirm.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rsp.UserLogout.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rtn.DepthMarketData.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rtn.Order.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Msg.Rtn.Trade.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Qry.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Qry.Instrument.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Qry.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Req.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Req.InputOrder.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Req.InputOrderAction.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Req.SettlementConfirm.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Req.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Req.UserLogout.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rsp.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rsp.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rsp.Error.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rsp.Instrument.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rsp.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rsp.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rtn.DepthMarketData.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rtn.Order.pb.h" />
+    <ClInclude Include="..\proto\adaptor\Rtn.Trade.pb.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="Reconnecter.h" />
+    <ClInclude Include="Trader.h" />
+    <ClInclude Include="TraderSpi.h" />
+    <ClInclude Include="QryQue.h" />
+    <ClInclude Include="ReqQue.h" />
+    <ClInclude Include="RspQue.h" />
+    <ClInclude Include="Handlers.h" />
+    <ClInclude Include="TrafficControl.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

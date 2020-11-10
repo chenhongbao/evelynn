@@ -1,0 +1,12 @@
+syntax = "proto3";
+package qry;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "QryInstrumentFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message QryInstrumentField {
+	string instrument_id = 1;
+	string exchange_id = 2;
+}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+package rsp;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "InstrumentFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message InstrumentField {
+	string instrument_id = 1;
+	string exchange_id = 2;
+	bytes instrument_name = 3;
+	string product_id = 4;
+	int32 product_class = 5;
+	int32 delivery_year = 6;
+	int32 delivery_month = 7;
+	int32 max_market_order_volume = 8;
+	int32 min_market_order_volume = 9;
+	int32 max_limit_order_volume = 10;
+	int32 min_limit_order_volume = 11;
+	int32 volume_multiple = 12;
+	double price_tick = 13;
+	string create_date = 14;
+	string open_date = 15;
+	string expire_date = 16;
+	string start_deliv_date = 17;
+	string end_deliv_date = 18;
+	bool is_trading = 19;
+	int32 underlying_multiple = 20;
+}

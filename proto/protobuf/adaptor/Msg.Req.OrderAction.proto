@@ -1,0 +1,14 @@
+syntax = "proto3";
+package msg.req;
+
+import "Req.InputOrderAction.proto";
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "ReqOrderActionMsgProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message ReqOrderActionMsg {
+	.req.InputOrderActionField order_action = 1;
+	int32 request_id = 2;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+package rsp;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "RspUserLoginFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message UserLoginField {
+	string trading_day = 1;
+	string login_time = 2;
+	string broker_id = 3;
+	string user_id = 4;
+	string system_name = 5;
+	int32 front_id = 6;
+	int32 session_id = 7;
+	string max_order_ref = 8;
+	string shfe_time = 9;
+	string dce_time = 10;
+	string czce_time = 11;
+	string ffex_time = 12;
+	string ine_time = 13;
+}

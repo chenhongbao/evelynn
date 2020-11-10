@@ -1,0 +1,20 @@
+syntax = "proto3";
+package rsp;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "CommissionRateFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message CommissionRateField {
+	string instrument_id = 1;
+	string broker_id = 2;
+	string investor_id = 3;
+	double open_ratio_by_money = 4;
+	double open_ratio_by_volume = 5;
+	double close_ratio_by_money = 6;
+	double close_ratio_by_volume = 7;
+	double close_today_ratio_by_money = 8;
+	double close_today_ratio_by_volume = 9;
+	string exchange_id = 10;
+}

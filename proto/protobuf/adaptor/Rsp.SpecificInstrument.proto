@@ -1,0 +1,11 @@
+syntax = "proto3";
+package rsp;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "SoecificInstrumentFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message SpecificInstrumentField {
+	string instrument_id = 1;
+}

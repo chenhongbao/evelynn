@@ -1,0 +1,15 @@
+syntax = "proto3";
+package rsp;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "RspAuthenticateFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message AuthenticateField {
+	string broker_id = 1;
+	string user_id = 2;
+	string user_product_info = 3;
+	string app_id = 4;
+	int32 app_type = 5;
+}

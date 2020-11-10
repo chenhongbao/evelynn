@@ -1,0 +1,13 @@
+syntax = "proto3";
+package msg.rtn;
+
+import "Rtn.Trade.proto";
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "RtnTradeMsgProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message RtnTradeMsg {
+	.rtn.TradeField trade = 1;
+}

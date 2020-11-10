@@ -1,0 +1,12 @@
+syntax = "proto3";
+package sub;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "SubMarketDataFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message SubMarketDataField {
+	repeated string instrument_id = 1;
+	int32 count = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package qry;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "QryCommissionRateFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message QryCommissionRateField {
+	string broker_id	= 1;
+	string investor_id = 2;
+	string instrument_id = 3;
+	string exchange_id = 4;
+}

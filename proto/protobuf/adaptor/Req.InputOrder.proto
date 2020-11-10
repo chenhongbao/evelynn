@@ -1,0 +1,28 @@
+syntax = "proto3";
+package req;
+
+option java_package = "io.evelynn.base.proto";
+option java_outer_classname = "InputOrderFieldProto";
+
+option csharp_namespace = "Evelynn.Base.Proto";
+
+message InputOrderField {
+	string broker_id	= 1;
+	string investor_id = 2;
+	string user_id = 3;
+	string instrument_id = 4;
+	string exchange_id = 5;
+	int32 order_price_type = 6;
+	int32 direction = 7;
+	int32 comb_offset_flag = 8;
+	int32 comb_hedge_flag = 9;
+	double limit_price = 10;
+	int32 volume_total_original = 11;
+	int32 time_condition = 12;
+	int32 volume_condition = 13;
+	int32 min_volume = 14;
+	int32 contigent_condition = 15;
+	double stop_price = 16;
+	int32 force_close_reason = 17;
+	int32 is_auto_suspend = 18;
+}
