@@ -12,3 +12,7 @@ int ReqMarketData::Enqueue(CThostFtdcReqUserLoginField* data, int requestId) {
 int ReqMarketData::Enqueue(char* pp[], int count) {
   return api.SubscribeMarketData(pp, count);
 }
+
+const char* ReqMarketData::GetTradingDay() {
+  return api.GetTradingDay();
+}

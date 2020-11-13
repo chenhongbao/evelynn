@@ -31,8 +31,8 @@ inline long SecondOfDay() {
 
 inline bool IsReconnect() {
   auto r = SecondOfDay();
-  return (r < S0 || (S1 < r && r < S2) || S3 < r) && 
-    subscribedInstruments.size() > 0;
+  return (r < S0 || (S1 < r && r < S2) || S3 < r) &&
+         subscribedInstruments.size() > 0;
 }
 
 void Subscribe(ReqMarketData& req) {
@@ -55,6 +55,13 @@ void Subscribe(ReqMarketData& req) {
     delete[] pp[i];
   }
   delete[] pp;
+}
+
+inline void SetTradingDay(CThostFtdcDepthMarketDataField* data,
+                          const char* src) {
+  if (src != NULL) {
+    strncpy_s(data->TradingDay, src, sizeof(TThostFtdcDateType));
+  }
 }
 
 MarketDataSpi::MarketDataSpi(RspMarketData& r, ReqMarketData& q)
@@ -104,5 +111,10 @@ void MarketDataSpi::OnRspSubMarketData(CThostFtdcSpecificInstrumentField* data,
 
 void MarketDataSpi::OnRtnDepthMarketData(CThostFtdcDepthMarketDataField* data) {
   RETURN_IF_NULL(data);
+  /*
+   * Set all trading days to trading-day.
+   * The trading day in CZCE's market data is action day, so need to align them.
+   */
+  SetTradingDay(data, req.GetTradingDay());
   LOG_CODE(rsp.Enqueue(data));
 }

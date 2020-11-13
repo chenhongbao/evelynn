@@ -9,6 +9,7 @@ class ReqMarketData {
 
   int Enqueue(CThostFtdcReqUserLoginField*, int);
   int Enqueue(char*[], int);
+  const char* GetTradingDay();
 
  private:
   CThostFtdcMdApi& api;
