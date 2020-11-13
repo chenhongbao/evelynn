@@ -3,7 +3,7 @@
 #include "MdHandlers.h"
 #include "MarketDataSpi.h"
 #include "MdConfig.h"
-#include "../common/Names.h"
+#include "common/Names.h"
 
 #define OK_OR_RETURN(FUNCTION_CALL) \
   {                                 \

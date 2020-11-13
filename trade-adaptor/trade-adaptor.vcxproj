@@ -116,7 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\libraries\ctp-6.3.19\include;..\libraries\cnats-2.3.0\include;..\libraries\protobuf-3.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\proto\cpp;..\libraries\ctp-6.3.19\include;..\libraries\cnats-2.3.0\include;..\libraries\protobuf-3.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -133,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\libraries\ctp-6.3.19\include;..\libraries\cnats-2.3.0\include;..\libraries\protobuf-3.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\proto\cpp;..\libraries\ctp-6.3.19\include;..\libraries\cnats-2.3.0\include;..\libraries\protobuf-3.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -145,46 +145,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\proto\adaptor\Msg.Qry.CommissionRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Qry.Instrument.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Qry.MarginRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Req.Authenticate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Req.OrderAction.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Req.OrderInsert.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Req.SettlementConfirm.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Req.UserLogin.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Req.UserLogout.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Authenticate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.CommissionRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Error.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.Instrument.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.MarginRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.OrderAction.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.OrderInsert.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.SettlementConfirm.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.UserLogin.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rsp.UserLogout.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rtn.DepthMarketData.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rtn.Order.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Msg.Rtn.Trade.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Qry.CommissionRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Qry.Instrument.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Qry.MarginRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Req.Authenticate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Req.InputOrder.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Req.InputOrderAction.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Req.SettlementConfirm.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Req.UserLogin.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Req.UserLogout.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rsp.Authenticate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rsp.CommissionRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rsp.Error.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rsp.Instrument.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rsp.MarginRate.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rsp.UserLogin.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rtn.DepthMarketData.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rtn.Order.pb.cc" />
-    <ClCompile Include="..\proto\adaptor\Rtn.Trade.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Qry.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Qry.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Qry.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Req.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Req.OrderAction.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Req.OrderInsert.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Req.SettlementConfirm.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Req.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Req.UserLogout.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.Error.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.OrderAction.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.OrderInsert.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.SettlementConfirm.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.SubMarketData.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rsp.UserLogout.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rtn.DepthMarketData.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rtn.Order.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Rtn.Trade.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Msg.Sub.MarketData.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Qry.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Qry.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Qry.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Req.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Req.InputOrder.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Req.InputOrderAction.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Req.SettlementConfirm.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Req.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Req.UserLogout.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rsp.Authenticate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rsp.CommissionRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rsp.Error.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rsp.Instrument.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rsp.MarginRate.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rsp.SpecificInstrument.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rsp.UserLogin.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rtn.DepthMarketData.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rtn.Order.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Rtn.Trade.pb.cc" />
+    <ClCompile Include="..\proto\cpp\adaptor\Sub.MarketData.pb.cc" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Handlers.cpp" />
     <ClCompile Include="Logger.cpp" />
@@ -198,46 +202,50 @@
     <ClCompile Include="TrafficControl.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\proto\adaptor\Msg.Qry.CommissionRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Qry.Instrument.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Qry.MarginRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Req.Authenticate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Req.OrderAction.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Req.OrderInsert.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Req.SettlementConfirm.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Req.UserLogin.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Req.UserLogout.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Authenticate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.CommissionRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Error.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.Instrument.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.MarginRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.OrderAction.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.OrderInsert.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.SettlementConfirm.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.UserLogin.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rsp.UserLogout.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rtn.DepthMarketData.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rtn.Order.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Msg.Rtn.Trade.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Qry.CommissionRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Qry.Instrument.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Qry.MarginRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Req.Authenticate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Req.InputOrder.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Req.InputOrderAction.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Req.SettlementConfirm.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Req.UserLogin.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Req.UserLogout.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rsp.Authenticate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rsp.CommissionRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rsp.Error.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rsp.Instrument.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rsp.MarginRate.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rsp.UserLogin.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rtn.DepthMarketData.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rtn.Order.pb.h" />
-    <ClInclude Include="..\proto\adaptor\Rtn.Trade.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Qry.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Qry.Instrument.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Qry.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Req.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Req.OrderAction.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Req.OrderInsert.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Req.SettlementConfirm.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Req.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Req.UserLogout.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.Error.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.Instrument.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.OrderAction.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.OrderInsert.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.SettlementConfirm.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.SubMarketData.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rsp.UserLogout.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rtn.DepthMarketData.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rtn.Order.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Rtn.Trade.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Msg.Sub.MarketData.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Qry.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Qry.Instrument.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Qry.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Req.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Req.InputOrder.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Req.InputOrderAction.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Req.SettlementConfirm.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Req.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Req.UserLogout.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rsp.Authenticate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rsp.CommissionRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rsp.Error.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rsp.Instrument.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rsp.MarginRate.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rsp.SpecificInstrument.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rsp.UserLogin.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rtn.DepthMarketData.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rtn.Order.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Rtn.Trade.pb.h" />
+    <ClInclude Include="..\proto\cpp\adaptor\Sub.MarketData.pb.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Logger.h" />

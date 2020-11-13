@@ -4,15 +4,15 @@
 #include "QryQue.h"
 #include "ReqQue.h"
 
-#include "../proto/adaptor/Msg.Qry.CommissionRate.pb.h"
-#include "../proto/adaptor/Msg.Qry.Instrument.pb.h"
-#include "../proto/adaptor/Msg.Qry.MarginRate.pb.h"
-#include "../proto/adaptor/Msg.Req.Authenticate.pb.h"
-#include "../proto/adaptor/Msg.Req.OrderAction.pb.h"
-#include "../proto/adaptor/Msg.Req.OrderInsert.pb.h"
-#include "../proto/adaptor/Msg.Req.SettlementConfirm.pb.h"
-#include "../proto/adaptor/Msg.Req.UserLogin.pb.h"
-#include "../proto/adaptor/Msg.Req.UserLogout.pb.h"
+#include "adaptor/Msg.Qry.CommissionRate.pb.h"
+#include "adaptor/Msg.Qry.Instrument.pb.h"
+#include "adaptor/Msg.Qry.MarginRate.pb.h"
+#include "adaptor/Msg.Req.Authenticate.pb.h"
+#include "adaptor/Msg.Req.OrderAction.pb.h"
+#include "adaptor/Msg.Req.OrderInsert.pb.h"
+#include "adaptor/Msg.Req.SettlementConfirm.pb.h"
+#include "adaptor/Msg.Req.UserLogin.pb.h"
+#include "adaptor/Msg.Req.UserLogout.pb.h"
 
 bool programExit = true;
 CThostFtdcReqAuthenticateField reqAuthenticateField = {0};

@@ -1,9 +1,4 @@
 #pragma once
-#pragma warning(disable : 4251)
-#pragma warning(disable : 4267)
-#pragma warning(disable : 4244)
-#pragma warning(disable : 6011)
-#pragma warning(disable : 26495)
 
 #pragma comment(lib, "nats.lib")
 #pragma comment(lib, "libprotobuf.lib")

@@ -1,10 +1,10 @@
 #include "MdGlobal.h"
 #include "RspMd.h"
-#include "../common/Names.h"
-#include "../proto/adaptor/Msg.Rsp.Error.pb.h"
-#include "../proto/adaptor/Msg.Rsp.SubMarketData.pb.h"
-#include "../proto/adaptor/Msg.Rsp.UserLogin.pb.h"
-#include "../proto/adaptor/Msg.Rtn.DepthMarketData.pb.h"
+#include "common/Names.h"
+#include "adaptor/Msg.Rsp.Error.pb.h"
+#include "adaptor/Msg.Rsp.SubMarketData.pb.h"
+#include "adaptor/Msg.Rsp.UserLogin.pb.h"
+#include "adaptor/Msg.Rtn.DepthMarketData.pb.h"
 #include "Logger.h"
 
 #define LOG_CODE(CODE, MSG) WriteCode(CODE, __LINE__, __FILE__, __func__, MSG)
@@ -43,13 +43,13 @@ void convert(CThostFtdcDepthMarketDataField& from,
   to.set_last_price(from.LastPrice);
   to.set_pre_settlement_price(from.PreSettlementPrice);
   to.set_pre_close_price(from.PreClosePrice);
-  to.set_pre_open_interest(from.PreOpenInterest);
+  to.set_pre_open_interest((int)from.PreOpenInterest);
   to.set_open_price(from.OpenPrice);
   to.set_highest_price(from.HighestPrice);
   to.set_lowest_price(from.LowestPrice);
   to.set_volume(from.Volume);
   to.set_turn_over(from.Turnover);
-  to.set_open_interest(from.OpenInterest);
+  to.set_open_interest((int)from.OpenInterest);
   to.set_close_price(from.ClosePrice);
   to.set_settlement_price(from.SettlementPrice);
   to.set_upper_limit_price(from.UpperLimitPrice);
@@ -101,7 +101,7 @@ natsStatus RspMarketData::Enqueue(CThostFtdcRspUserLoginField* data,
     return natsStatus::NATS_ERR;
   }
   auto s = natsConnection_Publish(conn, SUBJECT_RSP_REQ_LOGIN_2, bytes.data(),
-                                  bytes.length());
+                                  (int)bytes.length());
   if (s != NATS_OK) {
     LOG_CODE(s, "Send RspUserLoginMsg.");
   }
@@ -130,7 +130,7 @@ natsStatus RspMarketData::Enqueue(CThostFtdcSpecificInstrumentField* data,
     return natsStatus::NATS_ERR;
   }
   auto s = natsConnection_Publish(conn, SUBJECT_RSP_SUB_MD, bytes.data(),
-                                  bytes.length());
+                                  (int)bytes.length());
   if (s != NATS_OK) {
     LOG_CODE(s, "Send RspSubMarketDataMsg.");
   }
@@ -154,7 +154,7 @@ natsStatus RspMarketData::Enqueue(CThostFtdcRspInfoField* data,
     return natsStatus::NATS_ERR;
   }
   auto s = natsConnection_Publish(conn, SUBJECT_RSP_ERROR_2, bytes.data(),
-                                  bytes.length());
+                                  (int)bytes.length());
   if (s != NATS_OK) {
     LOG_CODE(s, "Send RspErrorMsg.");
   }
@@ -174,7 +174,7 @@ natsStatus RspMarketData::Enqueue(CThostFtdcDepthMarketDataField* data) {
     return natsStatus::NATS_ERR;
   }
   auto s = natsConnection_Publish(conn, SUBJECT_RTN_MD, bytes.data(),
-                                  bytes.length());
+                                  (int)bytes.length());
   if (s != NATS_OK) {
     LOG_CODE(s, "Send RtnDepthMarketDataMsg.");
   }

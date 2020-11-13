@@ -1,7 +1,7 @@
 #include "MdGlobal.h"
 #include "MdHandlers.h"
-#include "../proto/adaptor/Msg.Req.UserLogin.pb.h"
-#include "../proto/adaptor/Msg.Sub.MarketData.pb.h"
+#include "adaptor/Msg.Req.UserLogin.pb.h"
+#include "adaptor/Msg.Sub.MarketData.pb.h"
 #include "Logger.h"
 #include "RspMd.h"
 
