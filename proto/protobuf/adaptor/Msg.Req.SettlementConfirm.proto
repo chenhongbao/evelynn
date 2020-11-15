@@ -6,7 +6,7 @@ import "Req.SettlementConfirm.proto";
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "ReqSettlementConfirmMsgProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Request";
 
 message ReqSettlementConfirmMsg {
 	.req.SettlementConfirmField confirm = 1;

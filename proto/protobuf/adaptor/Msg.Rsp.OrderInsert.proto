@@ -7,7 +7,7 @@ import "Rsp.Error.proto";
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "RspOrderInsertMsgProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Response";
 
 message RspOrderInsertMsg {
 	.req.InputOrderField input_order = 1;

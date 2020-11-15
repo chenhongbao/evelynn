@@ -6,7 +6,7 @@ import "Rtn.DepthMarketData.proto";
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "RtnDepthMarketDataMsgProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Return";
 
 message RtnDepthMarketDataMsg {
 	.rtn.DepthMarketDataField Depth = 1;

@@ -4,7 +4,7 @@ package rsp;
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "RspUserLoginFieldProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Proto.Response";
 
 message UserLoginField {
 	string trading_day = 1;

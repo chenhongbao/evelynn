@@ -4,7 +4,7 @@ package sub;
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "SubMarketDataFieldProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Subscription";
 
 message SubMarketDataField {
 	repeated string instrument_id = 1;

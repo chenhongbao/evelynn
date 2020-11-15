@@ -6,7 +6,7 @@ import "Rtn.Order.proto";
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "RtnOrderMsgProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Return";
 
 message RtnOrderMsg {
 	.rtn.OrderField order = 1;

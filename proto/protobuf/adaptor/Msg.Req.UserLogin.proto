@@ -6,7 +6,7 @@ import "Req.UserLogin.proto";
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "ReqUserLoginMsgProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Request";
 
 message ReqUserLoginMsg {
 	.req.UserLoginField login = 1;

@@ -4,7 +4,7 @@ package rtn;
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "OrderFieldProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Return";
 
 message OrderField {
 	string broker_id	= 1;

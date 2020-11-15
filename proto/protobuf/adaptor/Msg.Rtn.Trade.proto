@@ -6,7 +6,7 @@ import "Rtn.Trade.proto";
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "RtnTradeMsgProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Return";
 
 message RtnTradeMsg {
 	.rtn.TradeField trade = 1;

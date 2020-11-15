@@ -4,7 +4,7 @@ package rsp;
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "MarginRateFieldProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Response";
 
 message MarginRateField {
 	string instrument_id = 1;

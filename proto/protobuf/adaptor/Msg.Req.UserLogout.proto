@@ -6,7 +6,7 @@ import "Req.UserLogout.proto";
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "ReqUserLogoutMsgProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Request";
 
 message ReqUserLogoutMsg {
 	.req.UserLogoutField logout = 1;

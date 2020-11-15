@@ -4,7 +4,7 @@ package req;
 option java_package = "io.evelynn.base.proto";
 option java_outer_classname = "ReqAuthenticateFieldProto";
 
-option csharp_namespace = "Evelynn.Base.Proto";
+option csharp_namespace = "Evelynn.Base.Request";
 
 message AuthenticateField {
 	string broker_id	= 1;
